@@ -1,4 +1,9 @@
-package SelectionSort;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package InsertionSort;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -7,9 +12,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MainSelectionSortTest {
+/**
+ *
+ * @author ExtremeTech
+ */
+public class OrdenadorInsertionSortTest {
     
-    public MainSelectionSortTest() {
+    public OrdenadorInsertionSortTest() {
     }
     
     @BeforeAll
@@ -28,14 +37,12 @@ public class MainSelectionSortTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of main method, of class MainSelectionSort.
-     */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        MainSelectionSort.main(args);
+    public void testOrdenar() {
+        System.out.println("ordenar");
+        int[] arreglo = null;
+        OrdenadorInsertionSort instance = new OrdenadorInsertionSort();
+        instance.ordenar(arreglo);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

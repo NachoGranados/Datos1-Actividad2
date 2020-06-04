@@ -1,4 +1,4 @@
-package BubbleSort;
+package SelectionSort;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -7,9 +7,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MainBubbleSortTest {
+public class OrdenadorSelectionSortTest {
     
-    public MainBubbleSortTest() {
+    public OrdenadorSelectionSortTest() {
     }
     
     @BeforeAll
@@ -29,10 +29,11 @@ public class MainBubbleSortTest {
     }
 
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        MainBubbleSort.main(args);
+    public void testOrdenar() {
+        System.out.println("ordenar");
+        int[] arreglo = null;
+        OrdenadorSelectionSort instance = new OrdenadorSelectionSort();
+        instance.ordenar(arreglo);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
