@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package InsertionSort;
 
 import org.junit.jupiter.api.AfterEach;
@@ -12,10 +7,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author ExtremeTech
- */
 public class OrdenadorInsertionSortTest {
     
     public OrdenadorInsertionSortTest() {
@@ -39,12 +30,21 @@ public class OrdenadorInsertionSortTest {
 
     @Test
     public void testOrdenar() {
+        
         System.out.println("ordenar");
-        int[] arreglo = null;
+        
+        int[] arreglo = {5,9,7,6,2,1,4,3,8,10};
+        
+        int[] resultado = {1,2,3,4,5,6,7,8,9,10};
+        
         OrdenadorInsertionSort instance = new OrdenadorInsertionSort();
+        
         instance.ordenar(arreglo);
-        // TODO review the generated test code and remove the default call to fail.
+        
+        assertEquals(resultado, arreglo);
+        
         fail("The test case is a prototype.");
+        
     }
     
 }

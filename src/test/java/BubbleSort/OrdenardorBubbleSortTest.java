@@ -30,12 +30,21 @@ public class OrdenardorBubbleSortTest {
 
     @Test
     public void testOrdenar() {
+        
         System.out.println("ordenar");
-        int[] arreglo = null;
+        
+        int[] arreglo = {5,9,7,6,2,1,4,3,8,10};
+        
+        int[] resultado = {1,2,3,4,5,6,7,8,9,10};
+        
         OrdenardorBubbleSort instance = new OrdenardorBubbleSort();
+        
         instance.ordenar(arreglo);
-        // TODO review the generated test code and remove the default call to fail.
+        
+        assertEquals(resultado, arreglo);
+        
         fail("The test case is a prototype.");
+        
     }
     
 }
